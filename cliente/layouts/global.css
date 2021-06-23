@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Black Bruno";
+  src: local("Black Bruno"),
+  url(~assets/black_bruno/Black-Bruno.otf) format("truetype");
+}
+
+html {
+  font-family: "Black Bruno";
+}

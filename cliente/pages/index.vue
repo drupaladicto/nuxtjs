@@ -1,11 +1,23 @@
 <template>
   <div>
     <Cabecera />
+    <losMasVendidos
+      v-for="destacados in LosDestacados"
+      :key="destacados.id"
+      :SeccionProductos="destacados"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+import { productosDestacados } from "@/assets/productos.js"
+export default {
+  data(){
+    return {
+      LosDestacados : productosDestacados
+    }
+  }
+}
 </script>
 
 <style>
